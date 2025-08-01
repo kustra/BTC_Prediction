@@ -34,6 +34,7 @@ def main():
     boruta_data_path = 'data/processed/Boruta_data.csv'
     
     df = load_data(cleaned_data_path)
+    """
     if df is not None:
         y = create_binary_classification(df)
         features_selected, features_selected_tentative = select_features(df, y)
@@ -46,6 +47,7 @@ def main():
     # Data preparation
     selected_features_path = 'data/processed/Boruta_data.csv'
     df = load_data(selected_features_path)
+    """
 
     timesteps = 5
     X_train, X_test, y_train, y_test, time_test, price, scaler = prepare_data(df, timesteps)
